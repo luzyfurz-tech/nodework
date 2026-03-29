@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather:wght@900&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Merriweather", serif;
+  
+  --color-nordic-bg: #F4F7F6;
+  --color-nordic-card: #FFFFFF;
+  --color-nordic-primary: #003366;
+  --color-nordic-secondary: #E1E8F0;
+  --color-nordic-text: #333333;
+  --color-nordic-border: #E5E7EB;
+}
+
+body {
+  @apply bg-nordic-bg text-nordic-text font-sans;
+  color-scheme: light;
+}
+
+/* Custom scrollbar for Nordic Light */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
